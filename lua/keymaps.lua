@@ -1,6 +1,21 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- My keybinds
+
+-- Escape back to normal
+vim.keymap.set('i', 'jk', '<Esc>')
+vim.keymap.set('x', 'sk', '<Esc>')
+
+-- System clipboard
+vim.keymap.set('n', '<leader>y', '"+y')
+vim.keymap.set('x', '<leader>y', '"+y')
+vim.keymap.set('n', '<leader>Y', '"+Y')
+vim.keymap.set('x', '<leader>Y', '"+Y')
+
+vim.keymap.set('n', '<leader>p', '"+p')
+vim.keymap.set('n', '<leader>P', '"+P')
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
